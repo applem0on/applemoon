@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px; padding:0px
+            font-size 12px;}
+        .circle100{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;}
+        
+        .pink {
+            background-color: pink;
+        }
+        div#box1 {
+            width: 500px;
+            background-color: black;
+        }
+        div#box2 {
+            width: 500px;
+            background-color: gray;
+            overflow: hidden;
+        }
+        div#box2 > div.circle100{
+            float:left;
+        }
+        div#box2 > div{
+            width: 200px
+        }
+        .center {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div class="circle100 pink center"></div>
+    </div>
+    <div id="box2">
+        <div class="center">
+            <div class="circle100 pink center"></div>
+            <div class="circle100 pink center"></div>
+        </div>  
+    </div>
+</body>
+</html>

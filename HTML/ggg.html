@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{
+            margin: 0px;
+            padding:0px;
+            font-size: 12px
+            
+            
+            }
+            
+            #wrap {
+            width: 2400px;
+            height: 300px;
+            background-color: blue;
+            list-style: none;
+            position: relative;
+           
+            }
+            #wrap > ul > li {
+                list-style: none;
+            }
+            
+            #today {
+                width: 2400px;
+                height: 30px;
+                background-color: white;
+                position: absolute;
+                left: 0; top: 0;
+            }
+
+            #today > ul > li{
+                float: right;
+                height: 15px;
+                color: black;
+            }
+            
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="today">
+            <div>07.31(수)</div>
+            <ul>
+                <li>미세먼지 좋음</li>
+                <li>초미세먼지 좋음</li>
+                <li>오존 좋음</li>
+            </ul>
+            <ul id="information">
+                <li>로그인</li>
+                <li>회원가입</li>
+                <li>language</li>
+                <li>SNS</li>
+            </ul>
+        </div>
+</body>
+</html>

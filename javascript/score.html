@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let kor = Number(prompt("국어점수를 입력하세요"))
+        let math = Number(prompt("수학점수를 입력하세요"))
+        let scien = Number(prompt("과학점수를 입력하세요"))
+        let music = Number(prompt("음악점수를 입력하세요"))
+
+        const SUBJECT_NUMBER = 4;
+
+        let total= kor + math + scien + music;
+        let avg = total / SUBJECT_NUMBER;
+
+        let output ="국어:"+kor+","
+                    "수학:"+math+","
+                    "과학:"+scien+","
+                    "음악:"+music+"\n"
+                    "총점:"+total+","
+                    "평균:"+avg
+
+        alert(output);
+        
+    </script>
+</body>
+</html>

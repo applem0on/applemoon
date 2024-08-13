@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 80px;
+            height: 150px;}
+        .image{
+            width:80px;
+            height:150px;
+            background-color: black;
+            margin-right:5px;
+            float:left;
+        }
+        div#box > div.image:nth-child(1){
+            background-color: tomato;
+        }
+        div#box >div.image:nth-child(2){
+            background-color: pink
+        }
+        div#box >div.image:nth-child(3){
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <img src="1.jpg"/>
+    <img src="2.jpg"/>
+    <img src="3.jpg"/>
+    <hr/>
+<div id="box"> 
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+</div>
+</body>
+</html>

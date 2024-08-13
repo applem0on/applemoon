@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: ;
+            font-weight: ;
+            font-style: ;
+            font-size: 12px;
+        }
+        body{
+            background-image: url(images/bodyback.PNG);
+            background-repeat: repeat-x;
+        }
+        #wrap{
+            min-width: 1200px;
+            max-width: 1400px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        #header-top{
+            height: 34px;
+            overflow: hidden;
+        }
+        #header-top > span{
+            color:white;
+            font-size: 1.2em;
+            font-weight: 600;;
+            display: block;
+            float: left;
+            margin-right: 30px;
+            line-height: 34px;
+        }
+        #header-top ul{
+            list-style: none;
+            overflow: hidden;
+        }
+
+        #header-top ul>li{
+            color:white;
+            line-height: 35px;
+        }
+        ul#today-info{
+            float: left;
+        }
+        ul#today-info > li {
+            float: left;
+            padding-right:0px 10px;
+        } 
+        ul#today-info > li:nth-child(2n+1){
+            color:#454550;
+        }
+        ul#tonday-info > li > span{
+            padding:0 10px;
+            font-size: 1.1em;
+        }
+        ul#user-menu{
+            float: right;
+        }
+        ul#user-menu > li {
+            padding: 0px 30px;
+            float:right;
+            font-size: 1.2m;
+            font-weight: 550;
+            border-left: 1px solid#454550;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="header-top">
+                <span id="date">07.31(수)</span>
+                <ul id="today-info">
+                    <li>/</li>
+                    <li>미세먼지 <span>좋음</span></li>
+                    <li>/</li>
+                    <li>초미세먼지 <span>좋음</span></li>
+                    <li>/</li>
+                    <li>오존 <span>좋음</span></li>
+                </ul>
+                <ul id="user-menu">
+                    <li>SNS</li>
+                    <li>language</li>
+                    <li>회원가입</li>
+                    <li>로그인</li>
+                </ul>
+            </div>
+            <div id="header-body"></div>
+        </div>
+    </div>
+</body>
+</html>

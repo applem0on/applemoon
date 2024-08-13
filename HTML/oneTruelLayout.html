@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one TrueLayout.html</title>
+    <style>
+        *{
+            font-size: 12px;
+            margin:0;
+            padding:0;
+        }
+        body{}
+
+        #wrap {
+            width: 500px;
+            background-color: beige;
+            margin : 0 auto;
+        }
+        #top{
+            background-color: tomato;
+        }
+
+        #middle{
+            overflow: hidden;
+        }
+
+        #middle > div#left{
+            width: 150px;
+            background-color: teal;
+            float: left;
+        }
+        #middle > div#right{
+            width: 350px;
+            background-color: yellow;
+            float: right;
+        }
+        
+
+        #bottom{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="top">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div id="middle">
+        <div id="left">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+        <div id="right">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+    </div><!--end middle-->
+    <div id="bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+</div> <!--end wrap-->
+</body>
+</html>
